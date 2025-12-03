@@ -64,7 +64,7 @@ body{
     display: none;
 }
 section{
-    min-height: 100vh;
+    min-height: 60vh;
     padding: 10rem 9% 10rem;
 }
 .home{
@@ -166,7 +166,7 @@ span{
 position: relative;
 }
 .text-animation span::before{
-    content: 'web Developer';
+    content: 'IT Student In Arellano University';
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -193,23 +193,7 @@ position: relative;
         width: calc(100% + 8px);
     }
 }
-@keyframes words {
-    0%, 20% {
-        content: "Web Developer";
-    }
-    21%, 40% {
-        content: "Graphic Designer";
-    }
-    41%, 60% {
-        content: "UI / UX Designer";
-    }
-    61%, 80% {
-        content: "Content Manager";
-    }
-    81%, 100% {
-        content: "Software Tester";
-    }
-}
+
  
 .about{
     display: flex;
@@ -278,49 +262,50 @@ position: relative;
     background-color:var(--bg-color) ;
     width: 50px;
 }
-.services{
+.Education{
     background: var(--bg-color);
     color: white;
 }
-.services h2{
+.Education h2{
     margin-bottom: 5rem;
     color: white;
 }
-.services-container{
+.Education-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
 
 }
-.service-box{
+.Education-box{
     background-color:var(--main-color) ;
     color: black;
-    height: 250px;
-    border-radius: 3rem;
+    height: 150px;
+    border-radius: 0.8rem;
     cursor: pointer;
-    transition:0.3s ease-in-out ;
+    transition:0.3s ease-in-out;
+    padding: 3rem 1.5rem;
 }
-.service-box:hover{
+.Education-box:hover{
     background: white;
     color: var(--main-color);
     transform: scale(1.03);
 }
-.service-box .service-info{
+.Education-box .service-info{
     display: flex;
     flex-direction:column ;
-    text-align: left;
+    text-align: center;
     max-height:200px ;
     justify-content: center;
     align-items: basline;
     padding:5em ;
 }
-.service-info h4{
-    font-size:2.5rem ;
+.Education-info h4{
+    font-size:4.5rem ;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
-.service-info p{
+.Education-info p{
     font-size: 1.6rem;
     font-weight: 400;
     max-height: 100px;
@@ -331,7 +316,7 @@ position: relative;
 }
 .contact h2{
   margin-bottom: 70rem;
-  margin: 1rem auto;
+  margin: 0rem auto;
   text-align: center;
   margin-bottom: 3rem;
 
@@ -354,7 +339,7 @@ position: relative;
     resize:none;
 }
 .contact form textarea{
-    width: 60%;
+    width: 72%;
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
@@ -365,8 +350,8 @@ position: relative;
     resize:none;
 }
 .contact form .btn{
-    margin-top: 2rem;
-    margin-left: 50rem;
+    margin-top: 0rem;
+    margin-left: 77rem;
 }
 .footer{
     position: relative;
@@ -496,17 +481,17 @@ position: relative;
         text-align: center;
     }
 
-    .services-container {
+    .Education-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .service-box {
+    .Education-box {
         height: auto;
     }
 
     .contact form .input-box input,
     .contact form textarea {
-        width: 100%;
+        width: 0%;
         margin: 1rem 0;
     }
 
